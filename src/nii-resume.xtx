@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{nii-resume}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     BULLET CHART
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bulletgauge[title={\bfseries{\large Revenue}\\1000 USD}]{275}{260}{300,250,150}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.3\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of WA}
+% \descript{BEng in Mechatronics}
+B. Eng. (Mechatronics)\\
+\location{Dec 2008 | Perth, WA}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links}
+Facebook:// \href{https://facebook/nii87}{\bf nii87} \\
+Github:// \href{https://github.com/nii236}{\bf nii236} \\
+LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \\
+
+\section{Frameworks \& Tools}
+Ruby on Rails \textbullet{} D3.js \textbullet{} React.js \textbullet{} koa.js \textbullet{} Webpack \textbullet{} TIBCO Spotfire \textbullet{} Docker •
+Redis \textbullet{} RabbitMQ \textbullet{} InfluxDB \textbullet{} PostgreSQL \textbullet{} InfluxDB \textbullet{} Nats \textbullet{} go-micro
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Projects}
+
+\runsubsection{ALGORITHMIC TRADING} | \location{C\#}
+Using the Quantconnect LEAN framework to develop trading algorithms.
+\sectionsep
+
+\runsubsection{BLOCKCHAIN TECH} | \location{Go}
+Exploring blockchain technology, bitcoin and how its innovative technology as programmable money can be used.
+\sectionsep
+
+\runsubsection{INTERNET OF THINGS} | \location{Go}
+Building a microservice to handle the large datasets and streams that will come from IoT devices for home automation and metrics.
+\sectionsep
+
+\runsubsection{CONT. INTEGRATION} | \location{Go}
+Writing an automated bot that tracks pull requests, clones, handles system and repo level dependencies, run tests, and notifies the relevant owners of the outcome.
+\sectionsep
+
+\runsubsection{MICROSERVICES} | \location{Go}
+Building a microservice swarm which will provide tools to run backtests and place live orders in the forex markets.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
+OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\
+\location{Over 1000 lines:}
+C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{John}{Nguyen}{ \urlstyle{same}\href{http://niiteki.io/technical-blog}{niiteki.io/technical-blog}\\
+	\href{mailto:jtnguyen236@gmail.com}{jtnguyen236@gmail.com} | 0427.110.527
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+
+\runsubsection{THE FRONTIER GROUP}
+\descript{| Analyst Developer}
+\location{Jan 2015 - Present | Perth, WA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Built supply chain analytics dashboard for BHP Billiton using TIBCO Spotfire, SQL Server, D3.js, IronPython
+	\item Built emergency department dashboard for Department of Health using TIBCO Spotfire
+	\item Developed responsive survey chatbot to assess worker readiness using alt.js and React.js for frontend and Ruby on Rails for backend
+	\item Developed backend, scalable microservices system for sensor readings using RabbitMQ, Google protobuf, Node.js, Redis, PostgreSQL, koa.js
+	\item Developed front and backend for social network providing a connection between university students and companies in various industries using Ruby on Rails
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IMPRES}
+\descript{| Senior Control Systems Engineer}
+\location{Jan 2014 – Oct 2014 | Perth, WA \& Newman, WA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Contracted to BHP Billiton’s Integrated Remote Operations Centre (IROC) for breakdown support for five fixed plants
+	\item Implemented on the spot control system and HMI modifications as requested by operations and process teams
+\end{tightemize}
+\sectionsep
+
+\runsubsection{LYCOPODIUM MINERALS}
+\descript{| Control Systems Engineer}
+\location{Jan 2012 – Oct 2013 | Perth, WA \& Akyem, Ghana}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Commissioned control system/fibre optics at gold plant in Ghana
+	\item Designed PLC control system, fibre patching, instrumentation interface
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ABESQUE ENGINEERING}
+\descript{| Mechanical Engineer}
+\location{Feb 2011 - Oct 2012 | Perth, WA \& Hahndorf, SA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Details on Request
+\end{tightemize}
+\sectionsep
+
+\runsubsection{BECHTEL CORPORATION}
+\descript{| Mechanical Engineer}
+\location{Dec 2007 – Jan 2011 | Perth, WA \& Boddington, WA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Details on Request
+\end{tightemize}
+\sectionsep
+
+\section{PUBLICATIONS}
+\runsubsection{BLOCKCHAIN ANALYTICS WITH CAYLEY}
+\descript{| Blog post}
+\href {Link}{http://blog.thefrontiergroup.com.au/2015/05/blockchainanalytics-with-cayley-db/} \\
+The process of building relationships between blocks, transactions and addresses using Google’s graph database Cayley was explored.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+Available on request.
+
+\end{minipage}
+\end{document}  \documentclass[]{article}

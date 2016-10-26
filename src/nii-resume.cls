@@ -1,5 +1,5 @@
 % Intro Options
-\ProvidesClass{deedy-resume-openfont}[2014/04/30 CV class]
+\ProvidesClass{nii-resume}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
@@ -17,9 +17,9 @@
 \renewcommand\refname{\vskip -1.5cm}
 
 % Color definitions
-\usepackage[usenames,dvipsnames]{xcolor} 
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{date}{HTML}{666666}
+\definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -34,27 +34,73 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
 Last Updated on \today
 \end{textblock}}
 
+% Bullet Chart
+\usepackage{pgfplots, pgfplotstable}
+\definecolor{ylgnbu1}{RGB}{237, 248, 177}
+\definecolor{ylgnbu2}{RGB}{127, 205, 187}
+\definecolor{ylgnbu3}{RGB}{44, 127, 184}
+
+% \pgfplotscreateplotcyclelist{bullet}{
+% {fill=ylgnbu1, draw=none},
+% {fill=ylgnbu2, draw=none},
+% {fill=ylgnbu3, draw=none},
+% }
+
+\pgfplotstableread[col sep=semicolon]{
+Label;  Sublabel;   Measure;    CompMeasure; Range1; Range2; Range3
+Revenue 2005 YTD;   USD;    260;    255;150;250;300
+}\datatable
+
+\newcommand{\bulletgauge}[4][]{
+    \begin{tikzpicture}
+    \begin{axis}[
+        y=1.5ex,
+        xtick pos=left,
+        ytick=\empty,
+        xmin=0, xmax=300,
+        enlarge y limits={abs=0ex},
+        tick align=outside,
+        axis on top,
+        every axis title/.style={
+            at={(rel axis cs:0,0.5)},
+            anchor=east,
+            align=right,
+            xshift=-1em
+        },
+        #1
+    ]
+    % \pgfplotsinvokeforeach{#4}{
+    %     % \pgfplotsset{cycle list name=bullet}
+    %     % \addplot +[xbar, bar width=3ex] coordinates {(##1,0)};
+    % }
+    \addplot [fill=black, xbar, bar width=1ex] coordinates {(#2,0)};
+    % \addplot [mark=|, mark options={very thick}, mark size=1.25ex] coordinates {(#3,0)};
+    \end{axis}
+    \end{tikzpicture}
+}
+
 % Name command
 \newcommand{\namesection}[3]{
+\vspace{5pt}
 \centering{
 \fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
+\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
 \centering{
 \color{headings}
 \fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
-\noindent\makebox[\linewidth]{\color{headings}\rule{\paperwidth}{0.4pt}}
-\vspace{-15pt}
+\noindent\makebox[\linewidth]{\color{headings}\rule{\textwidth}{0.4pt}}
+
 }
 
-% Section seperators 
+% Section seperators
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt} 
+\titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
 \newcommand{\sectionsep}{\vspace{8pt}}
 
@@ -81,4 +127,3 @@ Last Updated on \today
 \newenvironment{tightemize}{
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
-
