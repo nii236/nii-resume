@@ -60,54 +60,56 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     BULLET CHART
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bulletgauge[title={\bfseries{\large Revenue}\\1000 USD}]{275}{260}{300,250,150}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{minipage}[t]{0.3\textwidth}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EDUCATION
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Education}
-
-\subsection{University of WA}
-% \descript{BEng in Mechatronics}
-B. Eng. (Mechatronics)\\
-\location{Dec 2008 | Perth, WA}
-\sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links}
+Blog:// \href{http://niiteki.io/technical-blog}{\bf niiteki.io/technical-blog} \\
 Facebook:// \href{https://facebook/nii87}{\bf nii87} \\
 Github:// \href{https://github.com/nii236}{\bf nii236} \\
 LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \\
 
-\section{Frameworks \& Tools}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     BULLET CHART
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+	\begin{flushright}
+		\bulletgauge[title={Go}]{2}
+		\bulletgauge[title={Node.js}]{2}
+		\bulletgauge[title={Ruby}]{2}
+	\end{flushright}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TOOLS
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Tools}
 Ruby on Rails \textbullet{} D3.js \textbullet{} React.js \textbullet{} koa.js \textbullet{} Webpack \textbullet{} TIBCO Spotfire \textbullet{} Docker •
 Redis \textbullet{} RabbitMQ \textbullet{} InfluxDB \textbullet{} PostgreSQL \textbullet{} InfluxDB \textbullet{} Nats \textbullet{} go-micro
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
+%     PERSONAL PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Personal Projects}
 
-\runsubsection{ALGORITHMIC TRADING} | \location{C\#}
+\runsubsection{ALGO. TRADING} | \location{C\#}
 Using the Quantconnect LEAN framework to develop trading algorithms.
 \sectionsep
 
@@ -126,22 +128,6 @@ Writing an automated bot that tracks pull requests, clones, handles system and r
 \runsubsection{MICROSERVICES} | \location{Go}
 Building a microservice swarm which will provide tools to run backtests and place live orders in the forex markets.
 \sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
-\sectionsep
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN TWO
@@ -156,7 +142,8 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %     Name
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\namesection{John}{Nguyen}{ \urlstyle{same}\href{http://niiteki.io/technical-blog}{niiteki.io/technical-blog}\\
+\namesection{John}{Nguyen}{
+	B.Eng (Mechatronics)\\
 	\href{mailto:jtnguyen236@gmail.com}{jtnguyen236@gmail.com} | 0427.110.527
 }
 

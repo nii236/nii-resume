@@ -55,31 +55,27 @@ Label;  Sublabel;   Measure;    CompMeasure; Range1; Range2; Range3
 Revenue 2005 YTD;   USD;    260;    255;150;250;300
 }\datatable
 
-\newcommand{\bulletgauge}[4][]{
+\newcommand{\bulletgauge}[2][]{
     \begin{tikzpicture}
-    \begin{axis}[
-        y=1.5ex,
-        xtick pos=left,
-        ytick=\empty,
-        xmin=0, xmax=300,
-        enlarge y limits={abs=0ex},
-        tick align=outside,
-        axis on top,
-        every axis title/.style={
-            at={(rel axis cs:0,0.5)},
-            anchor=east,
-            align=right,
-            xshift=-1em
-        },
-        #1
-    ]
-    % \pgfplotsinvokeforeach{#4}{
-    %     % \pgfplotsset{cycle list name=bullet}
-    %     % \addplot +[xbar, bar width=3ex] coordinates {(##1,0)};
-    % }
-    \addplot [fill=black, xbar, bar width=1ex] coordinates {(#2,0)};
-    % \addplot [mark=|, mark options={very thick}, mark size=1.25ex] coordinates {(#3,0)};
-    \end{axis}
+      \begin{axis}[
+          y=0.7ex,
+          x=7ex,
+          xtick pos=left,
+          ytick=\empty,
+          xmin=0, xmax=3,
+          enlarge y limits={abs=0ex},
+          tick align=outside,
+          axis on top,
+          every axis title/.style={
+              at={(rel axis cs:0,0.5)},
+              anchor=east,
+              align=right,
+              xshift=-1em
+          },
+          #1
+      ]
+      \addplot [fill=black, xbar, bar width=5ex] coordinates {(#2,0)};
+      \end{axis}
     \end{tikzpicture}
 }
 
