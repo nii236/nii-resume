@@ -60,6 +60,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{John}{Nguyen}{
+	B.Eng (Mechatronics)\\
+	\href{mailto:jtnguyen236@gmail.com}{jtnguyen236@gmail.com} | 0427.110.527
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -89,8 +99,7 @@ LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \
 		\bulletgauge[title={Node}]{2.3} \\
 		\bulletgauge[title={Ruby}]{2} \\
 	\end{flushright}
-\sectionsep
-
+\vspace{-5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     TOOLS
@@ -100,7 +109,7 @@ LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \
 \section{Tools}
 Ruby on Rails \textbullet{} D3.js \textbullet{} React.js \textbullet{} koa.js \textbullet{} Webpack \textbullet{} TIBCO Spotfire \textbullet{} Docker •
 Redis \textbullet{} RabbitMQ \textbullet{} InfluxDB \textbullet{} PostgreSQL \textbullet{} InfluxDB \textbullet{} Nats \textbullet{} micro
-
+\vspace{10pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PERSONAL PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -136,14 +145,6 @@ Building a microservice swarm which will provide tools to run backtests and plac
 \hfill
 \begin{minipage}[t]{0.6\textwidth}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Name
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\namesection{John}{Nguyen}{
-	B.Eng (Mechatronics)\\
-	\href{mailto:jtnguyen236@gmail.com}{jtnguyen236@gmail.com} | 0427.110.527
-}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE

@@ -84,7 +84,7 @@ Revenue 2005 YTD;   USD;    260;    255;150;250;300
 
 % Name command
 \newcommand{\namesection}[3]{
-\vspace{5pt}
+\vspace*{10pt}
 \centering{
 \fontsize{40pt}{60pt}
 \fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
