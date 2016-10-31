@@ -1,4 +1,5 @@
 % Intro Options
+\nonstopmode
 \ProvidesClass{nii-resume}[2014/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 \DeclareOption{print}{\def\@cv@print{}}
@@ -57,10 +58,12 @@ Revenue 2005 YTD;   USD;    260;    255;150;250;300
 
 \newcommand{\bulletgauge}[2][]{
     \begin{tikzpicture}
+      \node at (-0.2,0.15) {0};
+      \node at (4,0.15) {3};
       \begin{axis}[
           y=0.7ex,
           x=7ex,
-          xtick pos=left,
+          xtick=\empty,
           ytick=\empty,
           xmin=0, xmax=3,
           enlarge y limits={abs=0ex},

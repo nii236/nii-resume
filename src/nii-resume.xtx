@@ -60,8 +60,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \lastupdated
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     COLUMN ONE
@@ -85,11 +83,11 @@ LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \
 %     BULLET CHART
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Skills}
+\section{Skills (Years)}
 	\begin{flushright}
-		\bulletgauge[title={Go}]{2}
-		\bulletgauge[title={Node.js}]{2}
-		\bulletgauge[title={Ruby}]{2}
+		\bulletgauge[title={Go}]{2.8} \\
+		\bulletgauge[title={Node}]{2.3} \\
+		\bulletgauge[title={Ruby}]{2} \\
 	\end{flushright}
 \sectionsep
 
@@ -101,13 +99,13 @@ LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \
 
 \section{Tools}
 Ruby on Rails \textbullet{} D3.js \textbullet{} React.js \textbullet{} koa.js \textbullet{} Webpack \textbullet{} TIBCO Spotfire \textbullet{} Docker •
-Redis \textbullet{} RabbitMQ \textbullet{} InfluxDB \textbullet{} PostgreSQL \textbullet{} InfluxDB \textbullet{} Nats \textbullet{} go-micro
+Redis \textbullet{} RabbitMQ \textbullet{} InfluxDB \textbullet{} PostgreSQL \textbullet{} InfluxDB \textbullet{} Nats \textbullet{} micro
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PERSONAL PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Personal Projects}
+\section{Projects}
 
 \runsubsection{ALGO. TRADING} | \location{C\#}
 Using the Quantconnect LEAN framework to develop trading algorithms.
