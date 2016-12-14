@@ -151,11 +151,15 @@ Building a microservice swarm which will provide tools to run backtests and plac
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-
+\runsubsection{BLOCKNINJA PTY LTD}
+\descript{| Senior Software Developer}
+\location{Jan 2015 - Present | Perth, WA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
 
 \runsubsection{THE FRONTIER GROUP}
 \descript{| Analyst Developer}
-\location{Jan 2015 - Present | Perth, WA}
+\location{Dec 2014 - Dec 2016 | Perth, WA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 	\item Built supply chain analytics dashboard for BHP Billiton using TIBCO Spotfire, SQL Server, D3.js, IronPython
@@ -181,8 +185,7 @@ Building a microservice swarm which will provide tools to run backtests and plac
 \location{Jan 2012 – Oct 2013 | Perth, WA \& Akyem, Ghana}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-	\item Commissioned control system/fibre optics at gold plant in Ghana
-	\item Designed PLC control system, fibre patching, instrumentation interface
+	\item Details on Request
 \end{tightemize}
 \sectionsep
 
