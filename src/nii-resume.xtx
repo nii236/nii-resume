@@ -47,7 +47,7 @@
 
 \documentclass[]{nii-resume}
 \usepackage{fancyhdr}
-
+\usepackage{fontawesome}
 \pagestyle{fancy}
 \fancyhf{}
 
@@ -82,10 +82,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Links}
-Blog:// \href{http://niiteki.io/technical-blog}{\bf niiteki.io/technical-blog} \\
-Facebook:// \href{https://facebook/nii87}{\bf nii87} \\
-Github:// \href{https://github.com/nii236}{\bf nii236} \\
-LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \\
+\faPencil\hspace{3ex} Blog:// \href{http://niiteki.io/technical-blog}{\bf niiteki.io/technical-blog} \\
+\faFacebook\hspace{3.4ex} Facebook:// \href{https://facebook/nii87}{\bf nii87} \\
+\faGithub\hspace{2.8ex} Github:// \href{https://github.com/nii236}{\bf nii236} \\
+\faLinkedinSign\hspace{3ex} LinkedIn://  \href{https://www.linkedin.com/in/johnnguyen87}{\bf johnnguyen87} \\
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -151,10 +151,16 @@ Building a microservice swarm which will provide tools to run backtests and plac
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
+{\vskip 0.3cm}
 \runsubsection{BLOCKNINJA PTY LTD}
-\descript{| Senior Software Developer}
-\location{Jan 2017 - Present | Perth, WA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\descript{| Senior Software Engineer}
+	\location{Jan 2017 - Present | Perth, WA}
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\begin{tightemize}
+		\item WebGL - Streaming 3d tilesets, virtual world asset management
+		\item Blockchain - Ethereum smart contracts, proof of existence
+		\item IoT - Data analytics, smart device reading aggregation, microservices
+	\end{tightemize}
 \sectionsep
 
 \runsubsection{THE FRONTIER GROUP}
@@ -205,13 +211,6 @@ Building a microservice swarm which will provide tools to run backtests and plac
 \begin{tightemize}
 	\item Details on Request
 \end{tightemize}
-\sectionsep
-
-\section{PUBLICATIONS}
-\runsubsection{BLOCKCHAIN ANALYTICS WITH CAYLEY}
-\descript{| Blog post}
-\href {Link}{http://blog.thefrontiergroup.com.au/2015/05/blockchainanalytics-with-cayley-db/} \\
-The process of building relationships between blocks, transactions and addresses using Google’s graph database Cayley was explored.
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
