@@ -153,7 +153,7 @@ Building a microservice swarm which will provide tools to run backtests and plac
 \section{Experience}
 \runsubsection{BLOCKNINJA PTY LTD}
 \descript{| Senior Software Developer}
-\location{Jan 2015 - Present | Perth, WA}
+\location{Jan 2017 - Present | Perth, WA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \sectionsep
 
@@ -166,7 +166,7 @@ Building a microservice swarm which will provide tools to run backtests and plac
 	\item Built emergency department dashboard for Department of Health using TIBCO Spotfire
 	\item Developed responsive survey chatbot to assess worker readiness using alt.js and React.js for frontend and Ruby on Rails for backend
 	\item Developed backend, scalable microservices system for sensor readings using RabbitMQ, Google protobuf, Node.js, Redis, PostgreSQL, koa.js
-	\item Developed front and backend for social network providing a connection between university students and companies in various industries using Ruby on Rails
+	\item Developed front and backend for social network connecting university students and companies in various industries using Ruby on Rails
 \end{tightemize}
 \sectionsep
 
