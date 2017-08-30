@@ -107,7 +107,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Tools}
-Ruby on Rails \textbullet{} D3.js \textbullet{} React.js \textbullet{} koa.js \textbullet{} Webpack \textbullet{} TIBCO Spotfire \textbullet{} Docker •
+TypeScript \textbullet{} PostGIS \textbullet{} AWS \textbullet{} Ruby on Rails \textbullet{} D3.js \textbullet{} React.js \textbullet{} koa.js \textbullet{} Webpack \textbullet{} TIBCO Spotfire \textbullet{} Docker •
 Redis \textbullet{} RabbitMQ \textbullet{} InfluxDB \textbullet{} PostgreSQL \textbullet{} InfluxDB \textbullet{} Nats \textbullet{} micro
 \vspace{10pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -157,6 +157,9 @@ Building a microservice swarm which will provide tools to run backtests and plac
 	\location{Jan 2017 - Present | Perth, WA}
 	\vspace{\topsep} % Hacky fix for awkward extra vertical space
 	\begin{tightemize}
+		\item Go, TypeScript, React, PostgreSQL - Full stack development
+		\item PostGIS - Integrating geospatial data with standard web applications
+		\item AWS - EB, EBS, EC2 and RDS deployments
 		\item WebGL - Streaming 3d tilesets, virtual world asset management
 		\item Blockchain - Ethereum smart contracts, proof of existence
 		\item IoT - Data analytics, smart device reading aggregation, microservices
