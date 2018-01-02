@@ -58,8 +58,6 @@ Revenue 2005 YTD;   USD;    260;    255;150;250;300
 
 \newcommand{\bulletgauge}[2][]{
     \begin{tikzpicture}
-      \node at (-0.2,0.15) {0};
-      \node at (4,0.15) {3};
       \begin{axis}[
           y=0.7ex,
           x=7ex,
